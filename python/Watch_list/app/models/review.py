@@ -1,8 +1,10 @@
 class Review:
 
-    all reviews = []
+    all_reviews= []
 
-     def __init__(self,movie_id,title,imageurl,review):
+    # Some code is here
+    
+    def __init__(self,movie_id,title,imageurl,review):
         self.movie_id = movie_id
         self.title = title
         self.imageurl = imageurl
@@ -16,3 +18,14 @@ class Review:
     @classmethod
     def clear_reviews(cls):
         Review.all_reviews.clear()
+
+    @classmethod
+    def get_reviews(cls,id):
+        
+        response = []
+
+        for review in cls.all_reviews:
+           if review.movie_id == id:
+               response.append(review)
+        return response
+
