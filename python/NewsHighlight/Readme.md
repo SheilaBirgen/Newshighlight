@@ -18,4 +18,7 @@ then on your loclal machine you can go to the terminal or the cmd for those usin
 ## Description
 NewsHighlight website is used to view different kind of news that you can relate for instance sports news technology,business news.All this helps one ti catch up with what is been happening around the globe
 
-##
+## BDD
+| Behavior | Input    | Output   |
+| :------------- | :------------- | :------------- |
+| User can view highlights of what is happening around the globe| user inputs the news he or she wants to view | The news is displayed|#
