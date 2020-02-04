@@ -54,52 +54,59 @@
   <hr>
   <div id="sports" class="collapse">
 
-  <div class="card text-white bg-dark" style="max-width: 80%;">
-    <div class="card-header">News Category</div>
-    <div class="card-body">
-      <h5 class="card-title"><strong>Sports News</strong> </h5>
-      <div class="row">
-        <p class="card-text "> {{macro.displaySourceList(sports)}}</p>
-        <em>Find out what is hot in sports.</em>
+    <div class="card text-white bg-dark" style="max-width: 80%;">
+      <div class="card-header">News Category</div>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Sports News</strong> </h5>
+          <div class="row">
+            <p class="card-text "> {{macro.displaySourceList(sports)}}</p>
+            <em>Find out what is hot in sports.</em>
 
+          </div>
+        </div>
       </div>
-
+  </div>
+  <hr>
+  <div id="sports" class="collapse">
+    <div class="card text-white bg-dark" style="max-width: 80%;">
+      <div class="card-header">News Category</div>
+      <div class="card-body">
+        <h5 class="card-title"><strong>Business News</strong></h5>
+          <div class="row">
+            <p class="card-text "> {{macro.displaySourceList(business)}}</p>
+            <em>Do not get left behind in matters business.</em>
+          </div>
+      </div>
     </div>
   </div>
   <hr>
-  <div class="card text-white bg-dark" style="max-width: 80%;">
-    <div class="card-header">News Category</div>
-    <div class="card-body">
-      <h5 class="card-title"><strong>Business News</strong></h5>
-      <div class="row">
-        <p class="card-text "> {{macro.displaySourceList(business)}}</p>
-        <em>Do not get left behind in matters business.</em>
-    </div>
-  </div>
-  <hr>
+  <div id="sports" class="collapse">
     <div class="card text-white bg-dark" style="max-width: 80%;">
       <div class="card-header">News Category</div>
       <div class="card-body">
         <h5 class="card-title"><strong>Tech News</strong></h5>
-        <div class="row">
-          <p class="card-text"> {{macro.displaySourceList(technology)}}</p>
-          <em>want to be in the know in things tech...read on.</em>
+          <div class="row">
+            <p class="card-text"> {{macro.displaySourceList(technology)}}</p>
+            <em>want to be in the know in things tech...read on.</em>
 
-        </div>
+          </div>
 
       </div>
     </div>
-    <hr>
-      <div class="card text-white bg-dark" style="max-width: 20rem;">
+  </div>
+  <hr>
+  <div id="sports" class="collapse">
+    <div class="card text-white bg-dark" style="max-width: 20rem;">
         <div class="card-header">News Category</div>
         <div class="card-body">
           <h5 class="card-title"><strong>Entertainment News</strong></h5>
-          <div class="row">
-            <p class="card-text "> {{macro.displaySourceList(entertainment)}}</p>
-            <em>For the latest, hotest and craziest in the world of entertainment.</em>
+            <div class="row">
+              <p class="card-text "> {{macro.displaySourceList(entertainment)}}</p>
+              <em>For the latest, hotest and craziest in the world of entertainment.</em>
 
-          </div>
+            </div>
         </div>
     </div>
-    <hr>
+  </div>
+  <hr>
  {%endblock%}
