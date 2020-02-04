@@ -1,7 +1,7 @@
 {% macro displaySourceList(source_list) %}
 
     {% for source in source_list %}
-        <a href="/news/{{source.id}}">{{ source.title}}</a>
+       <a href="/news/{{source.id}}">{{ source.name}}</a>
     {% endfor %}
 
 {% endmacro %}
@@ -11,15 +11,16 @@
 <div class="col-sm-6">
 
         <div class="card text-white bg-dark">
-            <div class="card-header">{{article.urlToImage}}</div>
+            <div class="card-header">
+              <img src="{{urlToImage}}" alt=""></div>
                 <div class="card-body">
                   <h5> class="card-title">{{article.title}}</h5>
                   <div class="row">
                     <p class="card-text text-white">{{article.description}} </p>
                     <p class="card-text text-white"> <a href="{{article.url}}">Click to view to whole article</a> </p>
                   </div>
-                  
                 </div>
+            <img src={{articles.urlToImage}}>
                 <div class="card-footer">
                         <small class="text-muted">Published at: {{article.publishedAt}}</small>   
                 </div>
