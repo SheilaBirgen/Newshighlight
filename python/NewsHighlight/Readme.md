@@ -33,3 +33,4 @@ You can reach out to me through the github account SheilaBirgen
 or on my email as jeronobergen@gmail.com
 
 ## License
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
