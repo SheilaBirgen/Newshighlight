@@ -1,13 +1,2 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap");
-
-.container-fluid {
-    
-    font-family: 'Cormorant Garamond', serif;
-
-}
-h1 {
-
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
-    
-}
+@import url( "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.cs");

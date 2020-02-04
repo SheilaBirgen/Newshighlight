@@ -1,112 +1,42 @@
 {% extends 'base.html'%}
-{% import 'macros.html' as macro%}
+{% import 'macros.html' as macro%} 
+
+
+{% block styles%}
+{{super()}}
+<link
+  rel="stylesheet"
+  href="{{url_for('static', filename='css/index.css')}}"/>
+
+{% endblock %}
+
+<!-- navbarblock -->
+
+{% block navbar%}
+<h1 class="WELCOME text-center">WELCOME TO NEWS WEBSITE </h1>
+<style>
+
+.body{
+  background-color:lightgray;
+}</style>
+
+{% endblock%}
+
+<!--Content block-->
 {% block content%}
+<div class="container-fluid">
+  <div>
+    {{ macro.display_new_sources(general)}}
 
-<div id="indexstyle" class="container-fluid">
+    <h2>Health News</h2>
+    {{ macro.display_new_sources(health)}}
 
-  <h1 class="lead text-center large">WELCOME TO YOUR TRUSTED NEWS HUB</h1>
+    <h2>Business News</h2>
+    {{ macro.display_new_sources(business)}}
 
-  <P>Click any of the buttons below to select the news category you want.</P>
-  <h4>
-      <a class="btn btn-warning btn-lg" data-toggle="collapse" href="#general" role="button" aria-expanded="false"
-        aria-controls="collapseExample">General</a>
-      <!-- <a class="btn btn-warning btn-lg" data-toggle="collapse" href="#science_news" role="button" aria-expanded="false" aria-controls="collapseExample">Science</a> -->
-      <a class="btn btn-warning btn-lg" data-toggle="collapse" href="#health" role="button" aria-expanded="false"
-        aria-controls="collapseExample">Health</a>
-      <a class="btn btn-warning btn-lg" data-toggle="collapse" href="#sports" role="button" aria-expanded="false"
-        aria-controls="collapseExample">Sports</a>
-      <a class="btn btn-warning btn-lg" data-toggle="collapse" href="#technology" role="button" aria-expanded="false"
-        aria-controls="collapseExample">Technology</a>
-      <a class="btn btn-warning btn-lg" data-toggle="collapse" href="#entertainment" role="button" aria-expanded="false"
-        aria-controls="collapseExample">Entertainment</a>
-      </h4>
+    <h2>Sports News</h2>
+    {{ macro.display_new_sources(sports)}}
   </div>
-  <hr>
-  <div style=" font-family: 'Cormorant Garamond', serif;  " id="general" class="collapse">
+</div>
 
-  <div class="card text-white bg-dark" style="max-width: 80%;">
-    <div class="card-header">News Category</div>
-    <div class="card-body">
-      <h5 class="card-title"><strong>General News</strong></h5>
-      <div class="row">
-        <p class="card-text"> {{macro.displaySourceList(general)}}</p>
-        <em>Get the latest news.</em>
-
-      </div>
-
-    </div>
-  </div>
-  <hr>
-  <div id="health" class="collapse">
-
-  <div class="card text-white bg-dark" style="max-width: 80%;">
-    <div class="card-header">News Category</div>
-    <div class="card-body">
-      <h5 class="card-title"><strong>Health News</strong></h5>
-      <div class="row">
-        <p class="card-text "> {{macro.displaySourceList(health)}}</p>
-        <em>Here you will find what is new in teh world of health.</em>
-
-      </div>
-
-    </div>
-  </div>
-  <hr>
-  <div id="sports" class="collapse">
-
-    <div class="card text-white bg-dark" style="max-width: 80%;">
-      <div class="card-header">News Category</div>
-        <div class="card-body">
-          <h5 class="card-title"><strong>Sports News</strong> </h5>
-          <div class="row">
-            <p class="card-text "> {{macro.displaySourceList(sports)}}</p>
-            <em>Find out what is hot in sports.</em>
-
-          </div>
-        </div>
-      </div>
-  </div>
-  <hr>
-  <div id="sports" class="collapse">
-    <div class="card text-white bg-dark" style="max-width: 80%;">
-      <div class="card-header">News Category</div>
-      <div class="card-body">
-        <h5 class="card-title"><strong>Business News</strong></h5>
-          <div class="row">
-            <p class="card-text "> {{macro.displaySourceList(business)}}</p>
-            <em>Do not get left behind in matters business.</em>
-          </div>
-      </div>
-    </div>
-  </div>
-  <hr>
-  <div id="sports" class="collapse">
-    <div class="card text-white bg-dark" style="max-width: 80%;">
-      <div class="card-header">News Category</div>
-      <div class="card-body">
-        <h5 class="card-title"><strong>Tech News</strong></h5>
-          <div class="row">
-            <p class="card-text"> {{macro.displaySourceList(technology)}}</p>
-            <em>want to be in the know in things tech...read on.</em>
-
-          </div>
-
-      </div>
-    </div>
-  </div>
-  <hr>
-  <div id="sports" class="collapse">
-    <div class="card text-white bg-dark" style="max-width: 20rem;">
-        <div class="card-header">News Category</div>
-        <div class="card-body">
-          <h5 class="card-title"><strong>Entertainment News</strong></h5>
-            <div class="row">
-              <p class="card-text "> {{macro.displaySourceList(entertainment)}}</p>
-              <em>For the latest, hotest and craziest in the world of entertainment.</em>
-
-            </div>
-        </div>
-    </div>
-  </div>
-  <hr>
- {%endblock%}
+{% endblock %}

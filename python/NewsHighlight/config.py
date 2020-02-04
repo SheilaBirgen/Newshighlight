@@ -2,8 +2,9 @@ import os
 
 class Config:
 
-    HIGHLIGHT_API_BASE_URL ='https://newsapi.org/v2/sources?apikey=0412983810954d639953702fca063935'  
+    HIGHLIGHT_API_BASE_URL ='https://newsapi.org/v2/sources?category={}&apikey=0412983810954d639953702fca063935'  
     NEWSHIGHLIGHT_API_KEY = os.environ.get('NEWSHIGHLIGHT_API_KEY')
+    NEWS_HLIGHT='https://newsapi.org/v2/everything?&apiKey=0412983810954d639953702fca063935' 
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
