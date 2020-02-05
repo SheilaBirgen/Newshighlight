@@ -9,7 +9,9 @@ pip
 html
 css
 
-## Screenshot
+## Livelink Deployment
+
+https://sheilanews.herokuapp.com/
 
 ## Installation
 For the installation one can forks the project from my repository
