@@ -25,6 +25,8 @@ NewsHighlight website is used to view different kind of news that you can relate
 
 ## CodeBeat Badge
 
+[![codebeat badge](https://codebeat.co/badges/9bbbe98b-6822-4db8-a5d1-f10d9de746e6)](https://codebeat.co/projects/github-com-sheilabirgen-newshighlight-feature)
+
 ## Known Bugs
 There are no known bugs at the moment
 
