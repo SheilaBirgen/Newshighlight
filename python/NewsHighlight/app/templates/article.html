@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+
+        <h2 class="text-center">Science</h2>
+        {{macro.display_new_articles(science)}}
+
+        <h2>Business</h2>
+        {{macro.display_new_articles(Business)}}
+
+        <h2>Entertainment</h2>
+        {{macro.display_new_articles(entertainment)}}
+
+        <h2>Health</h2>
+        {{macro.display_new_articles(health)}}
+    </div>
+{% endblock %}
